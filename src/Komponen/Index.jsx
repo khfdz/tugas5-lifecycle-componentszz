@@ -37,7 +37,7 @@ class Halaman extends Component {
   fetchNews = async (page, q) => {
     console.log(`Fetching News for ${q}, Page Number ${page}...`);
 
-    var url = `https://newsapi.org/v2/everything?q=${q}&from=2024-01-11&to=2024-01-11&pageSize=20&page=${page}&sortBy=popularity&apiKey=53de3838f3ef4745b2d5dc60e1155f14`;
+    var url = `https://newsapi.org/v2/everything?q=${q}&from=2024-02-1&pageSize=20&page=${page}&sortBy=popularity&apiKey=53de3838f3ef4745b2d5dc60e1155f14`;
 
     try {
       let response = await fetch(url);
