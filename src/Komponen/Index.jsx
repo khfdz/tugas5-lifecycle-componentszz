@@ -96,8 +96,8 @@ class Halaman extends Component {
           <h1>Welcome to News APP ({totalResults} Results)</h1>
           <div className="row content">
             {displayData && displayData.length > 0 ? (
-              displayData.map((item, index) => (
-                <NewsCard key={index} item={item} />
+              displayData.map((item ) => (
+                <NewsCard  item={item} />
               ))
             ) : (
               <p>No articles found.</p>
